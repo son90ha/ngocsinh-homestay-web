@@ -1,0 +1,45 @@
+#slider_1 {
+    width: 1008px;
+    height: 756px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+}
+
+#slider_1 img {
+    width: 1008px;
+    height: 756px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slider_1 img.active {
+    display: block;
+    margin: 0 auto;
+}
+
+#slider_1 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#slider_1 button:hover {
+    color: red;
+}
+
+#slider_1 button.prev {
+    left: 0;
+}
+
+#slider_1 button.next {
+    right: 0;
+}
